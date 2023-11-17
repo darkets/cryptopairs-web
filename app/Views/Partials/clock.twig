@@ -1,0 +1,8 @@
+<h1 id="global-time">{{ globalTime }}</h1>
+
+<script>
+    setInterval(() => {
+        let now = new Date();
+        document.getElementById('global-time').textContent = now.toLocaleTimeString();
+    }, 1000)
+</script>

@@ -1,0 +1,11 @@
+{% include 'Partials/head.twig' %}
+{% include 'Partials/navbar.twig' %}
+
+<div class="cryptos-container">
+    <div class="crypto-container">
+        <h3>{{ crypto.symbol }}</h3>
+        <p>Price: {{ crypto.askPrice }} {{ baseSymbol }} ( {{ crypto.priceChangePercent}}% )</p>
+        <p>High Price: {{ crypto.highPrice }} {{ baseSymbol }}</p>
+        <p>Low Price: {{ crypto.lowPrice }} {{ baseSymbol }}</p>
+    </div>
+</div>

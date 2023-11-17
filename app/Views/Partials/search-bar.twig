@@ -1,0 +1,15 @@
+<div class="search-container">
+    <form action="/search" method="GET">
+        <label for="currency">Crypto Currency</label>
+        <input type="text" id="currency" name="currency" placeholder="Enter crypto" minlength="3" required>
+
+        <label for="base">BASE</label>
+        <select id="base" name="base">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="BTC">BTC</option>
+        </select>
+
+        <input type="submit" value="Search">
+    </form>
+</div>
